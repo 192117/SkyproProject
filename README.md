@@ -27,7 +27,7 @@ _Создайте файл .env на основе .env_example для запус
 
 3. Примените ДАМП на базу:
 
-`gunzip -c my_dump.gz | psql -h HOST -p PORT -U USER -d DATABASE `
+`psql -h HOST -p PORT -U USER -d DATABASE < my_dump.sql`
 
 4. Запустите приложеие с помощью Poetry:
 
